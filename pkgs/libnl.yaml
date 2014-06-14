@@ -1,0 +1,5 @@
+extends: [autotools_package]
+
+sources:
+- url: http://www.carisma.slowglass.com/~tgr/libnl/files/libnl-3.2.24.tar.gz
+  key: tar.gz:7ogw4xoiv5nylpdnactrlavgria6ni7x
