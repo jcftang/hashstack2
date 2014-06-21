@@ -1,0 +1,8 @@
+extends: [autotools_package]
+
+dependencies:
+  build: [bison, gettext]
+
+sources:
+- url: http://ftp.gnu.org/gnu/coreutils/coreutils-8.22.tar.xz
+  key: tar.xz:lm7jjgmbklabpzwhlvlltomudchlog7u
