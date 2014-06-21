@@ -1,0 +1,5 @@
+extends: [autotools_package]
+
+sources:
+- url: http://mvapich.cse.ohio-state.edu/download/mvapich/mvapich2-2.0.tar.gz
+  key: tar.gz:cha4xavlqvkxtslg22thgkhmmhysmw3w
