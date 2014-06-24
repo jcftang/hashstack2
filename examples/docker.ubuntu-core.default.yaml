@@ -1,0 +1,15 @@
+extends:
+- file: debian.yaml
+
+packages:
+  launcher:
+  python:
+    host: false
+    build_with: |
+      bzip2, openssl, sqlite
+  git:
+  mercurial:
+  mpi:
+    use: openmpi
+  blas:
+    use: openblas
