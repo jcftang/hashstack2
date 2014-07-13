@@ -1,0 +1,9 @@
+extends: [autotools_package]
+
+sources:
+- key: tar.gz:conmqheupcwm2ofj5nthmi6xlgl2egl4
+  url: http://ftp.heanet.ie/pub/OpenBSD/LibreSSL/libressl-2.0.0.tar.gz
+
+when_build_dependency:
+- prepend_path: PATH
+  value: '${ARTIFACT}/bin'
