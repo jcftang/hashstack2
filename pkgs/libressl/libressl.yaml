@@ -9,6 +9,10 @@ sources:
 
 build_stages:
 
+- name: configure
+  when: platform == 'linux'
+  extra: ['LDFLAGS=-lrt']
+
 - files: [libressl-dummy-egd-functions.diff, libressl-remove-main-symbol.diff]
   name: patch
   handler: bash
