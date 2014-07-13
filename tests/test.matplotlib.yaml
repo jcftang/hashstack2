@@ -11,5 +11,5 @@ packages:
   python:
     host: false
     build_with: |
-      bzip2, openssl
+      bzip2, libressl
   matplotlib:

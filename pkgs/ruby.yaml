@@ -1,7 +1,7 @@
 extends: [autotools_package]
 dependencies:
-  build: [curl, zlib, openssl, bison, libyaml, libxml2, libxslt, libiconv, ncurses, readline]
-  run: [curl, zlib, openssl, libyaml, libxml2, libxslt, libiconv, ncurses, readline]
+  build: [curl, zlib, libressl, bison, libyaml, libxml2, libxslt, libiconv, ncurses, readline]
+  run: [curl, zlib, libressl, libyaml, libxml2, libxslt, libiconv, ncurses, readline]
 
 sources:
   - url: http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.2.tar.bz2
