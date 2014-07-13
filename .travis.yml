@@ -10,6 +10,7 @@ env:
   - TEST_PROFILE="test.packages2.yaml"
   - TEST_PROFILE="test.packages3.yaml"
   - TEST_PROFILE="test.packages4.yaml"
+  - TEST_PROFILE="test.libressl.yaml"
   - TEST_PROFILE="test.netcdf4.yaml"
   - TEST_PROFILE="test.vxl.yaml"
   - TEST_PROFILE="test.dolfin.yaml"
