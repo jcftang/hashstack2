@@ -4,6 +4,15 @@ sources:
 - key: tar.gz:conmqheupcwm2ofj5nthmi6xlgl2egl4
   url: http://ftp.heanet.ie/pub/OpenBSD/LibreSSL/libressl-2.0.0.tar.gz
 
+build_stages:
+
+- files: [rand_lib.patch]
+  name: RAND_egd
+  handler: bash
+  before: configure
+  bash: |
+    patch -p1 < _hashdist/rand_lib.patch
+
 when_build_dependency:
 - prepend_path: PATH
   value: '${ARTIFACT}/bin'
