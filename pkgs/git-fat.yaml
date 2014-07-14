@@ -1,0 +1,16 @@
+extends: [setuptools_package]
+
+sources:
+- key: tar.gz:6ucxndpfjgklb6gc4hk4wocgx576dmb4
+  url: https://pypi.python.org/packages/source/g/git-fat/git-fat-0.3.0.tar.gz
+
+build_stages:
+
+- name: install_doc
+  after: install
+  handler: bash
+  bash: |
+    install -d ${ARTIFACT}/share/doc/git-fat
+    install -m 744 README.rst ${ARTIFACT}/share/doc/git-fat/README.rst
+    install -m 744 LICENSE ${ARTIFACT}/share/doc/git-fat/LICENSE
+    install -m 744 CHANGELOG ${ARTIFACT}/share/doc/git-fat/CHANGELOG
