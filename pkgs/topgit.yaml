@@ -1,0 +1,11 @@
+extends: [base_package]
+
+sources:
+- key: git:f2815f4debdb07f86ee86dd4eb75280919ace55d
+  url: http://repo.or.cz/r/topgit.git
+
+build_stages:
+- name: make-install
+  handler: bash
+  bash: |
+    make install prefix=${ARTIFACT}
