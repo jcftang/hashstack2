@@ -4,7 +4,7 @@ defaults:
   relocatable: false
 
 dependencies:
-  build: [zlib, openssl, librsync, uthash, ncurses]
+  build: [zlib, openssl, librsync, uthash]
 
 sources:
 #- key: tar.bz2:3sxz6uolbuesay4cwk6mlp24uov4xoi7

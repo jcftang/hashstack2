@@ -6,3 +6,13 @@ dependencies:
 sources:
 - key: tar.gz:myz6iycwmj3dua53moeffhf57u5rdkpm
   url: http://downloads.sourceforge.net/project/librsync/librsync/0.9.7/librsync-0.9.7.tar.gz
+
+build_stages:
+
+- name: remove_inline
+  after: prologue
+  before: configure
+  handler: bash
+  files: [delta.c.patch]
+  bash: |
+    patch -p0 < _hashdist/delta.c.patch
