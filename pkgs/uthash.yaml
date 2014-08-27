@@ -1,0 +1,19 @@
+extends: [base_package]
+
+#sources:
+#- key: tar.bz2:svxvzglzqne4iezhl7smt7ysrvzofadf
+#  url: http://downloads.sourceforge.net/project/uthash/uthash/uthash-1.9.7/uthash-1.9.7.tar.bz2
+
+sources:
+- key: tar.gz:6lyqcfpu3yb3tdmmf2da4ja5cznkcuaz
+  url: https://github.com/troydhanson/uthash/archive/v1.9.9.tar.gz
+
+build_stages:
+- name: make-install
+  handler: bash
+  bash: |
+    install -d ${ARTIFACT}/include/
+    cd src
+    for h in *.h; do
+      install -m 644 ${h} ${ARTIFACT}/include/
+    done
