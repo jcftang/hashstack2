@@ -21,4 +21,4 @@ build_stages:
     sed -i.bak -e 's,$(DESTDIR)/var/,$(DESTDIR)/$(ARTIFACT)/var/,;' Makefile.in
 - name: configure
   mode: override
-  extra: ['--sbindir=${ARTIFACT}/bin', '--enable-static']
+  extra: ['--sbindir=${ARTIFACT}/bin', '--enable-static=yes']
