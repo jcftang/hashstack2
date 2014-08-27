@@ -1,0 +1,24 @@
+extends: [autotools_package]
+
+defaults:
+  relocatable: false
+
+dependencies:
+  build: [zlib, openssl, librsync, uthash, ncurses]
+
+sources:
+#- key: tar.bz2:3sxz6uolbuesay4cwk6mlp24uov4xoi7
+#  url: http://downloads.sourceforge.net/project/burp/burp-2.0.8/burp-2.0.8.tar.bz2
+
+- key: tar.gz:yh76pu5elncwz4s2nj6onvxarz3gqu52
+  url: https://github.com/grke/burp/archive/1.4.20.tar.gz
+
+build_stages:
+- name: use-hashstack-artifact-dir-for-spool
+  before: configure
+  handler: bash
+  bash: |
+    sed -i.bak -e 's,$(DESTDIR)/var/,$(DESTDIR)/$(ARTIFACT)/var/,;' Makefile.in
+- name: configure
+  mode: override
+  extra: ['--sbindir=${ARTIFACT}/bin', '--enable-static']
