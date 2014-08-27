@@ -1,5 +1,8 @@
 extends: [autotools_package]
 
+dependencies:
+  build: [zlib, bzip2]
+
 sources:
 - key: tar.gz:myz6iycwmj3dua53moeffhf57u5rdkpm
   url: http://downloads.sourceforge.net/project/librsync/librsync/0.9.7/librsync-0.9.7.tar.gz
