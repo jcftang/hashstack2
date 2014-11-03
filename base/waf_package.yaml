@@ -1,0 +1,18 @@
+extends: [base_package]
+
+build_stages:
+
+  - name: configure
+    after: prologue
+
+  - name: make
+    after: configure
+    handler: bash
+    bash: |
+      ./waf build -j ${HASHDIST_CPU_COUNT}
+
+  - name: install
+    after: make
+    handler: bash
+    bash: |
+      ./waf install
