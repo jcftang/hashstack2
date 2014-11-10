@@ -4,8 +4,8 @@ dependencies:
   build: [gnu-sed, zlib]
 
 sources:
-- key: tar.gz:h5kghno6xe7p2kwe4i5cayjkdthtfgnf
-  url: http://ftp.heanet.ie/pub/OpenBSD/LibreSSL/libressl-2.0.5.tar.gz
+- key: tar.gz:7nnnuqnhlmy4rxm76aj5vssxwjjqi6wr
+  url: http://ftp.heanet.ie/pub/OpenBSD/LibreSSL/libressl-2.1.1.tar.gz
 
 build_stages:
 
