@@ -1,0 +1,9 @@
+extends: [setuptools_package]
+
+dependencies:
+  build: []
+  run: [decorator]
+
+sources:
+- key: zip:cqdnbcrc5njov2rcwr6tm4h5nccuil6m
+  url: https://pypi.python.org/packages/source/n/networkx/networkx-1.10.zip

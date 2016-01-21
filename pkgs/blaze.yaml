@@ -1,0 +1,28 @@
+extends: [setuptools_package]
+
+dependencies:
+  build:
+    - numpy
+    - pandas
+    - datashape
+    - odo
+    - toolz
+    - multipledispatch
+    - sqlalchemy1
+    - psutil
+    - flask
+
+  run:
+    - numpy
+    - pandas
+    - datashape
+    - odo
+    - toolz
+    - multipledispatch
+    - sqlalchemy1
+    - psutil
+    - flask
+
+sources:
+ - key: tar.gz:e6dftxgotxup7n7qujj7uhr5lyl3ehhh
+   url: https://pypi.python.org/packages/source/b/blaze/blaze-0.9.0.tar.gz

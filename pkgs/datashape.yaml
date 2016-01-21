@@ -1,0 +1,12 @@
+extends: [setuptools_package]
+
+dependencies:
+  build: []
+  run:
+    - numpy
+    - multipledispatch
+    - python-dateutil
+
+sources:
+ - key: tar.gz:s6t7urj4kbyweca36kk2cvbnow5ozzb4
+   url: https://pypi.python.org/packages/source/D/DataShape/datashape-0.5.0.tar.gz

@@ -1,0 +1,15 @@
+extends: [setuptools_package]
+
+dependencies:
+  build: []
+  run:
+    - datashape
+    - numpy
+    - pandas
+    - toolz
+    - multipledispatch
+    - networkx
+
+sources:
+ - key: tar.gz:5hmeu5xzuyf3e6ebaicisi2i22edzqpu
+   url: https://pypi.python.org/packages/source/o/odo/odo-0.4.0.tar.gz

@@ -1,0 +1,9 @@
+extends: [setuptools_package]
+
+dependencies:
+  build: []
+  run: []
+
+sources:
+ - key: tar.gz:a7kb7m7nexueerjw4sfikzxyrihzsjwk
+   url: https://pypi.python.org/packages/source/m/multipledispatch/multipledispatch-0.4.8.tar.gz
